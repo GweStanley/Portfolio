@@ -1,96 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gwe S. Education</title>
-    <style>
-        table, th, td {
-          border: 0.1px solid black;
-        }
-         body{
-          line-height: 2;
-          padding: auto;
-          background-color: lightcyan;
-         }
-         table{
-          line-height: 1;
-         }
-         h3{
-          background-color: beige;
-          border-radius: 3%;
-          text-align: center;
-         }
-        </style>
-          <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gwe S. | Education</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    body {
+      background-color: lightcyan;
+      line-height: 1.8;
+      padding-top: 70px; /* Space for fixed navbar */
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    h3 {
+      background-color: beige;
+      border-radius: 5px;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+      color: #005f73;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: white;
+      margin-top: 20px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+
+    table, th, td {
+      border: 1px solid #aaa;
+      padding: 10px;
+      text-align: center;
+    }
+
+    ul {
+      margin-top: 15px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #007B8F;
+      color: white;
+      margin-top: 40px;
+    }
+  </style>
 </head>
-
-
 <body>
-   <h3>My Formal Educational Background</h3>
-   <div class="container">
-    <table style="width:100%">
-        <tr>
-          <th>Period</th>
-          <th>Institution</th>
-          <th>Certificate Acquired</th>
-          <th>Specialty</th>
-        </tr>
-        <tr>
-          <td>2000-2007</td>
-          <td>CS NJINIKOM</td>
-          <td>FSLC</td>
-          <td>General</td>
-        </tr>
-        <tr>
-          <td>2007-2014</td>
-          <td>GTHS FUNDONG</td>
-          <td>Bacalaureat G</td>
-          <td>Gestion des Administration</td>
-        </tr>
-        <tr>
-            <td>2014-2016</td>
-            <td>FONAB Polytechnic  University Institute</td>
+
+  <!-- Navbar Start -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Gwe: Education</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarContent">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="./index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="./wsite.html">Web Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="./Graphics.html">Graphics</a></li>
+          <li class="nav-item"><a class="nav-link active" href="./education.html">Education</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Navbar End -->
+
+  <div class="container">
+    <h3>My Formal Educational Background</h3>
+    <div class="table-responsive">
+      <table class="table table-bordered">
+        <thead class="table-light">
+          <tr>
+            <th>Period</th>
+            <th>Institution</th>
+            <th>Certificate Acquired</th>
+            <th>Specialty</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2000–2007</td>
+            <td>CS NJINIKOM</td>
+            <td>FSLC</td>
+            <td>General</td>
+          </tr>
+          <tr>
+            <td>2007–2014</td>
+            <td>GTHS FUNDONG</td>
+            <td>Baccalauréat G</td>
+            <td>Gestion des Administrations</td>
+          </tr>
+          <tr>
+            <td>2014–2016</td>
+            <td>FONAB Polytechnic University Institute</td>
             <td>Higher National Diploma (HND)</td>
             <td>Accounting and Finance</td>
-
-
-        </tr>
-        <tr>
-            <td>2023-2024</td>
+          </tr>
+          <tr>
+            <td>2023–2024</td>
             <td>FONAB Polytechnic University Institute</td>
-            <td>Bachelor of Technology (Btech)</td>
+            <td>Bachelor of Technology (BTech)</td>
             <td>Accounting and Finance</td>
-        </tr>
+          </tr>
+        </tbody>
       </table>
     </div>
 
-      <h3>Other Education/ Vocational Training</h3>
-      <div class="container">
-      <ul>
-        <li>Web Development: Udemy</li>
-        <li>Graphics Designing: Udemy / Bk Studios</li>
-        <li>UN BSAFE: Online course</li>
-      </ul>
-    </div>
+    <h3>Other Education / Vocational Training</h3>
+    <ul>
+      <li>Web Development: Udemy</li>
+      <li>Graphics Designing: Udemy / Bk Studios</li>
+      <li>UN BSAFE: Online course</li>
+    </ul>
 
-      <h3>Seminars and capacity Building Workshops</h3>
-      <div class="container">
+    <h3>Seminars and Capacity Building Workshops</h3>
+    <ul>
+      <li>Tax Optimization – MINFI Cameroon, 2023</li>
+      <li>Anti-Money Laundering and Terrorism Financing – MINFI Cameroon, 2024</li>
+      <li>Credit Risk Management – MUFID Union</li>
+      <li>Survival in Hot Zones – United Nations</li>
+    </ul>
+  </div>
 
-      <ul>
-        <li>Tax optimization by MINFI Cameroon 2023</li>
-        <li>Anti Money Laundry and Terrorism Financing by MINFI Cameroon 2024  </li>
-        <li>Credit Risk Management by MUFID Union</li>
-        <li>Survival in Hot Zones by UN</li>
-      </ul>
-    </div>
+  <footer>
+    <p>&copy; Gwe. All rights reserved.</p>
+  </footer>
 
-      <hr>
-
-       
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<footer>
-  <p>&copy; Gwe. All rights reserved.</p>
-</footer>
-
 </html>
