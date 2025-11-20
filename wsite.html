@@ -1,215 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Web Developer Portfolio">
-    <title>Gwe S. | Web Developer Portfolio</title>
-    <link rel="stylesheet" href="./wsite.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gwe S. | Web Developer</title>
+
+    <!-- Modern clean UI with Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <!-- Header Section -->
-    <header>
-        <div class="container">
-            <h1>Gwe Stanley A.</h1>
-            <p>Frontend Web Developer projects</p>
+<body class="bg-gray-50 text-gray-800 leading-relaxed">
+
+    <!-- Navbar -->
+    <nav class="w-full bg-white shadow-sm py-4 fixed top-0 z-50">
+        <div class="max-w-6xl mx-auto flex justify-between items-center px-4">
+            <h1 class="text-xl font-semibold">Gwe Stanley</h1>
+            <div class="space-x-6">
+                <a href="#skills" class="hover:text-blue-600">Skills</a>
+                <a href="#projects" class="hover:text-blue-600">Projects</a>
+                <a href="#contact" class="hover:text-blue-600">Contact</a>
+            </div>
         </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="pt-28 pb-20 text-center bg-gradient-to-br from-blue-100 to-purple-100">
+        <h2 class="text-4xl font-bold mb-4">Frontend Web Developer</h2>
+        <p class="text-lg max-w-2xl mx-auto text-gray-700">Crafting clean, responsive and user-centered web experiences with modern tools like HTML, CSS, JavaScript, React & Next.js.</p>
     </header>
 
-    <!-- Skills Table Section -->
-    <section id="skills" class="section">
-        <div class="container">
-            <h2>My Skills Level</h2>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Skill</th>
-                        <th>Level</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>HTML</td>
-                        <td><div class="progress-bar" style="width: 90%"></div><span>90%</span></td>
-                    </tr>
-                    <tr>
-                        <td>CSS</td>
-                        <td><div class="progress-bar" style="width: 85%"></div><span>80%</span></td>
-                    </tr>
-                    <tr>
-                        <td>JavaScript</td>
-                        <td><div class="progress-bar" style="width: 80%"></div><span>70%</span></td>
-                    </tr>
-                    <tr>
-                        <td>React/Next js</td>
-                        <td><div class="progress-bar" style="width: 75%"></div><span>70%</span></td>
-                    </tr>
-                </tbody>
-            </table>
+    <!-- Skills Section -->
+    <section id="skills" class="max-w-6xl mx-auto py-16 px-4">
+        <h2 class="text-3xl font-semibold mb-8 text-center">Skills & Proficiency</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
+                <p class="font-medium">HTML</p>
+                <div class="w-full bg-gray-200 rounded-full h-3 mt-1">
+                    <div class="bg-blue-600 h-3 rounded-full" style="width: 90%"></div>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-medium">CSS</p>
+                <div class="w-full bg-gray-200 rounded-full h-3 mt-1">
+                    <div class="bg-blue-600 h-3 rounded-full" style="width: 85%"></div>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-medium">JavaScript</p>
+                <div class="w-full bg-gray-200 rounded-full h-3 mt-1">
+                    <div class="bg-blue-600 h-3 rounded-full" style="width: 80%"></div>
+                </div>
+            </div>
+
+            <div>
+                <p class="font-medium">React / Next.js</p>
+                <div class="w-full bg-gray-200 rounded-full h-3 mt-1">
+                    <div class="bg-blue-600 h-3 rounded-full" style="width: 75%"></div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2>My Projects</h2>
-            <div class="projects-grid">
-                <!-- Project 1 -->
-                <div class="project-card">
-                    <img src="./images/mathQuiz.png" alt="Project 1">
-                    <h3>Maths Quiz</h3>
-                    <video controls>
-                        <source src="./videos/Mathquiz.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>An interactive fun elementary mathematics for primary pupils. 
-                    Just addition,subtraction, Multiplication and Division
-                    </p>
-                    <a href="https://gwestanley.github.io/MathQuizv2/">Visit site</a>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card">
-                    <img src="./images/Alert.png" alt="Project 2">
-                    <h3>Security System</h3>
-                    <video controls>
-                        <source src="./videos/alert.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Alert.io. This system is designed to signal security challenges seamlessly and 
-                        alert occupants or individuals about the specific threat. Its 
-                        suitable for commercial and residential settlements
-                    </p>
-                    <a href="https://gwestanley.github.io/SecurityAlerts/">Visit site</a>
+    <section id="projects" class="bg-white py-16">
+        <div class="max-w-6xl mx-auto px-4">
+            <h2 class="text-3xl font-semibold mb-12 text-center">Featured Projects</h2>
 
+            <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+
+                <!-- Project Card Template -->
+                <div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="./images/mathQuiz.png" class="w-full h-40 object-cover" />
+                    <div class="p-5">
+                        <h3 class="font-semibold text-xl mb-2">Maths Quiz</h3>
+                        <p class="text-sm mb-3">Interactive mathematics quiz for primary learners.</p>
+                        <a href="https://gwestanley.github.io/MathQuizv2/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="./images/toDo.png" alt="Project 1">
-                    <h3>To Do</h3>
-                    <video controls>
-                        <source src="./videos/task.io.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Task.io is more than just a to-do app; it’s a commitment to enhancing the way
-                         you work and live. 
-                        By simplifying task management, we aim to give you back what matters most —
-                         your time.
-                    </p>
-                    <a href=" https://gwestanley.github.io/Task/">Visit site</a>
-                </div>
-                <!-- Project  -->
-                <div class="project-card">
-                    <img src="./images/hotel_site.png" alt="Project 2">
-                    <h3>BUSINESS WEBSITE</h3>
-                    <video controls>
-                        <source src="./images/hotel.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>Hotel site were "Book Now" takes your to the whatsapp of the institution.
-                        Imaginary Hotel and resort in the coastal SW region of cameroon</p>
-                    <a href=" https://gwestanley.github.io/pathfinderHotel/">Visit site</a>
-
+                <div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="./images/Alert.png" class="w-full h-40 object-cover" />
+                    <div class="p-5">
+                        <h3 class="font-semibold text-xl mb-2">Security System</h3>
+                        <p class="text-sm mb-3">A smart alert system for security notifications.</p>
+                        <a href="https://gwestanley.github.io/SecurityAlerts/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="./images/Tour237Logo.png" alt="Project">
-                    <h3>Home of All Businesses</h3>
-                
-                    <video controls>
-                        <source src="./videos/Tour237 (1).mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>TOUR237.Travelers guide were businesses register and guide tourist to locate them.
-                        Easy to use and seamless interface. 
-                    </p>
-                    <a href="https://gwestanley.github.io/Tour/">Visit site</a>
-                </div>
-                <!-- Project  -->
-                <div class="project-card">
-                    <img src="./images/Wellnst logo.png" alt="Project 2">
-                    <h3>Medical Info Application</h3>
-                    <video controls>
-                        <source src="./videos/WellNest.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>WellNest is a modern medical tracker designed to help you stay
-                         prepared with vital medical records. Our goal is to make storing
-                          and accessing emergency information as simple and efficient as 
-                          possible. With WellNest, you can:</p>
-                          <a href="https://gwestanley.github.io/WellNest_vanila/">Visit site</a>
-
+                <div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+                    <img src="./images/toDo.png" class="w-full h-40 object-cover" />
+                    <div class="p-5">
+                        <h3 class="font-semibold text-xl mb-2">Task.io</h3>
+                        <p class="text-sm mb-3">A minimalist app for smart task management.</p>
+                        <a href="https://gwestanley.github.io/Task/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+                    </div>
                 </div>
 
-                <div class="project-card">
-                    <img src="./images/vaultx.png" alt="Project 2">
-                    <h3>VaulTx</h3>
-                    <video controls>
-                        <source src="./images/vaultx &caption.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <p>VaultX is designed to empower individuals and businesses in Cameroon and Africa
-                        by leveraging the XRP Ledger for secure, decentralized asset management. 
-                        We provide seamless solutions for asset registration, NFT minting, and Web3 
-                        integration.</p>
-                          <a href="https://gwestanley.github.io/Vaultx.app/">Visit site</a>
+                <div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/hotel_site.png" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">Imaginary Hotel Website</h3>
+        <p class="text-sm mb-3">A clean hotel booking landing page with WhatsApp integration.</p>
+        <a href="https://gwestanley.github.io/pathfinderHotel/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
 
-                </div>
-                <div class="project-card">
-                    <img src="./images/konradShot.png" alt="Project 2">
-                    <h1>Next.JS Project</h1>
-                    <h3>KonradoShop</h3>
-                    <p>A Simple online shop for products sampling and orders built with Next.js.</p>
-                          <a href="https://konradoshop.vercel.app/">Visit site</a>
+<div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/Tour237Logo.png" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">TOUR237</h3>
+        <p class="text-sm mb-3">A travel guide platform for businesses and tourists.</p>
+        <a href="https://gwestanley.github.io/Tour/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
 
-                </div>
-                <div class="project-card">
-                    <img src="./images/pathfinderHero.gif" alt="Project 2">
-                  <h1>Next.JS Project</h1>
+<div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/Wellnst logo.png" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">WellNest</h3>
+        <p class="text-sm mb-3">A medical record tracker for emergency health preparedness.</p>
+        <a href="https://gwestanley.github.io/WellNest_vanila/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
 
-                    <h3>Pathfinders Hub</h3>
-    
-                    <p>An all inclusive Talent Site. From web development to Graphic Design, 
-                        Accountancy, Civil Engineering etc/p>
-                          <a href="https://pathfindershub.vercel.app/">Visit site</a>
+<div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/vaultx.png" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">VaultX</h3>
+        <p class="text-sm mb-3">Web3 asset registration & NFT minting powered by the XRP ledger.</p>
+        <a href="https://gwestanley.github.io/Vaultx.app/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
 
-                </div>
-                <div class="project-card">
-                    <img src="./images/ART LOGO.gif" alt="Project 2">
-                    <h1>Square Space CMS Project</h1>
-                    <h3>ArtOutLoud</h3>
-                    <p>A Comprehensive simple UX website built with CMS Square Space.</p>
-                          <a href="https://www.artoutloud.art/">Visit site</a>
+<div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/konradShot.png" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">KonradoShop</h3>
+        <p class="text-sm mb-3">A Next.js product sampling shop with clean UI.</p>
+        <a href="https://konradoshop.vercel.app/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
 
-                </div>
+<div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/pathfinderHero.gif" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">Pathfinders Hub</h3>
+        <p class="text-sm mb-3">A talent hub showcasing multi-disciplinary services.</p>
+        <a href="https://pathfindershub.vercel.app/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
+
+<div class="bg-gray-100 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <img src="./images/ART LOGO.gif" class="w-full h-40 object-cover" />
+    <div class="p-5">
+        <h3 class="font-semibold text-xl mb-2">ArtOutLoud</h3>
+        <p class="text-sm mb-3">A clean Squarespace CMS website for art expression.</p>
+        <a href="https://www.artoutloud.art/" class="text-blue-600 font-medium" target="_blank">Visit Site →</a>
+    </div>
+</div>
+
             </div>
-            
         </div>
     </section>
 
-    <div class="container"> <br>
-<p>This are just a few of my projects developed for personal use or portfolio building purpose. some other projects 
-    of clients have not been included for privacy purposes. All projects, including this  <a href="/index.html">CV</a> are 
-my creation from scratch with great assistance from Wed docs. </p> <br>
-<h2>Contact Me</h2>
-<p>Cell: +237 652 484 583 / +237 683 762 319</p>
-<p>Mail: <a href="mailto:pathfinderlabs1@gmail.com">Send mail</a></p>
-<a href="https://wa.me/+237652484583?text=Hello!" target="_blank">WhatsApp1</a><br>
-<a href="https://wa.me/+237683762319?text=Hello!" target="_blank">WhatsApp2</a>
+    <!-- Contact Section -->
+    <section id="contact" class="max-w-6xl mx-auto py-16 px-4 text-center">
+        <h2 class="text-3xl font-semibold mb-4">Contact Me</h2>
+        <p class="mb-4">Cell: +237 652 484 583 / +237 683 762 319</p>
+        <p class="mb-6">Email: <a href="mailto:pathfinderlabs1@gmail.com" class="text-blue-600">pathfinderlabs1@gmail.com</a></p>
 
-
-    </div>
-
-    <!-- Dynamic Footer Section -->
-    <footer>
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Gwe Stanley</p>
+        <div class="space-x-4">
+            <a href="https://wa.me/+237652484583?text=Hello!" target="_blank" class="text-green-600 font-medium">WhatsApp 1</a>
+            <a href="https://wa.me/+237683762319?text=Hello!" target="_blank" class="text-green-600 font-medium">WhatsApp 2</a>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white text-center py-6">
+        <p>&copy; <span id="year"></span> Gwe Stanley</p>
     </footer>
 
     <script>
-const currentYear = new Date().getFullYear();
-document.getElementById("current-year").textContent = currentYear;
-
+        document.getElementById("year").textContent = new Date().getFullYear();
     </script>
 </body>
 </html>

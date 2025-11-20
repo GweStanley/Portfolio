@@ -1,488 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gwe S. Graphic Design Portfolio</title>
-    <link rel="stylesheet" href="./wsite.css">
-    <style>
-        /* General Styles */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color:lawngreen;
-            color: #fff;
-            padding: 1rem;
-        }
-
-        header .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        header nav ul {
-            list-style: none;
-            display: flex;
-            gap: 1rem;
-            margin: 0;
-            padding: 0;
-        }
-
-        header nav ul li a {
-            color: #fff;
-            text-decoration: none;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 4rem 2rem;
-            background: #f4f4f4;
-        }
-
-        .portfolio {
-            padding: 3%;
-            text-align: center;
-            background-color:green;
-        }
-
-        .portfolio h2 {
-            font-size: 2rem;
-            margin-bottom: 1.5rem;
-        }
-
-        .gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            justify-content: center;
-        }
-
-        .card {
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            position: relative;
-        }
-
-        .card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .card img, .card video {
-            width: 100%;
-            height: auto;
-            display: block;
-            border-bottom: 1px solid #ddd;
-        }
-
-        .card-content {
-            padding: 1rem;
-            text-align: left;
-        }
-
-        .card-content h3 {
-            margin: 0 0 0.5rem;
-            font-size: 1.25rem;
-            color: red;
-            text-decoration: underline;
-        }
-        .card-content h4 {
-            
-            color: #FB9EC6;
-        }
-
-        .card-content p {
-            margin: 0 0 1rem;
-            font-size: 0.9rem;
-            color: #666;
-        }
-
-        .card-content button {
-            background-color: #007BFF;
-            color: #fff;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background-color 0.3s ease;
-        }
-
-        .card-content button:hover {
-            background-color: #0056b3;
-        }
-
-        .about{
-            padding: 2rem;
-            text-align: center;
-
-
-        } #contact {
-            padding: 5%;
-            text-align: center;
-            background:#D4F6FF;
-        }
-
-        footer {
-            text-align: center;
-            padding: 1rem;
-            background-color: #25034b;
-            color: #fff;
-        }
-        .book{
-        padding-bottom: 2%;
-        align-items: center;
-        align-items: end;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gwe S. Graphic Design Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    <header>
-        <div class="logo">S. Gwe Designer </div>
-        <nav>
-            <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li><a href="./competences-abilities.html">Portfolio</a></li>
-                <li><a href="./personal.html">About</a></li>
-                <li><a href="./personal.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+<body class="font-sans bg-gray-50 text-gray-800">
 
-    <section id="home" class="hero">
-        <h1>Welcome to My Graphic Design Portfolio</h1>
-        <p>Creative designs that inspire and captivate.</p>
-    </section>
+  <!-- HEADER -->
+  <header class="flex justify-between items-center bg-lime-500 text-white p-4 shadow-md">
+    <div class="text-xl font-bold">S. Gwe Designer</div>
+    <nav>
+      <ul class="flex gap-4 text-white font-medium">
+        <li><a href="/index.html" class="hover:underline">Home</a></li>
+        <li><a href="./competences-abilities.html" class="hover:underline">Portfolio</a></li>
+        <li><a href="./personal.html" class="hover:underline">About</a></li>
+        <li><a href="./personal.html" class="hover:underline">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-        <!-- Skills Table Section -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2>My Skills Level In:</h2>
-                <table>
-                    <thead>
-                        <tr>
-                            <th>Software</th>
-                            <th>Level</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Canva</td>
-                            <td><div class="progress-bar" style="width: 90%"></div><span>75%</span></td>
-                        </tr>
-                        <tr>
-                            <td>AdobePro/Premeire</td>
-                            <td><div class="progress-bar" style="width: 60%"></div><span>60%</span></td>
-                        </tr>
-                        <tr>
-                            <td>CorelDraw</td>
-                            <td><div class="progress-bar" style="width: 70%"></div><span>70%</span></td>
-                        </tr>
-                        <tr>
-                            <td>PhotoShop</td>
-                            <td><div class="progress-bar" style="width: 70%"></div><span>70%</span></td>
-                        </tr>
+  <!-- HERO -->
+  <section class="text-center py-20 bg-gray-100">
+    <h1 class="text-4xl font-bold mb-3">Welcome to My Graphic Design Portfolio</h1>
+    <p class="text-lg text-gray-600">Creative designs that inspire and captivate.</p>
+  </section>
 
-                    </tbody>
-                </table>
-            </div>
-        </section>
-    
+  <!-- SKILLS -->
+  <section id="skills" class="max-w-4xl mx-auto px-4 py-16">
+    <h2 class="text-3xl font-semibold text-center mb-10">My Skills Level In:</h2>
+    <table class="w-full bg-white shadow rounded-lg overflow-hidden">
+      <thead class="bg-gray-200 text-left">
+        <tr>
+          <th class="p-3">Software</th>
+          <th class="p-3">Level</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b">
+          <td class="p-3">Canva</td>
+          <td class="p-3 flex items-center gap-3"><div class="bg-gray-300 h-3 w-full rounded"><div class="bg-blue-600 h-3 rounded" style="width:90%"></div></div>75%</td>
+        </tr>
+        <tr class="border-b">
+          <td class="p-3">AdobePro/Premiere</td>
+          <td class="p-3 flex items-center gap-3"><div class="bg-gray-300 h-3 w-full rounded"><div class="bg-blue-600 h-3 rounded" style="width:60%"></div></div>60%</td>
+        </tr>
+        <tr class="border-b">
+          <td class="p-3">CorelDraw</td>
+          <td class="p-3 flex items-center gap-3"><div class="bg-gray-300 h-3 w-full rounded"><div class="bg-blue-600 h-3 rounded" style="width:70%"></div></div>70%</td>
+        </tr>
+        <tr>
+          <td class="p-3">Photoshop</td>
+          <td class="p-3 flex items-center gap-3"><div class="bg-gray-300 h-3 w-full rounded"><div class="bg-blue-600 h-3 rounded" style="width:70%"></div></div>70%</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
 
+  <!-- PORTFOLIO -->
+  <section id="portfolio" class="bg-green-600 py-16 px-4 text-white">
+    <h2 class="text-4xl font-semibold text-center mb-12">My Projects</h2>
 
-    <section id="portfolio" class="portfolio">
-        <h2>My Projects</h2>
-        <div class="gallery">
-            <div class="card">
-                <img src="./assets/Graphics/pathfinder AnimatedLogo.gif" alt="Project 1">
-                <div class="card-content">
-                    <h3>Animated logos</h3>
-                    <h4>Bring Your Brand to Life with a Stunning Animated Logo</h4>
-                    <p>Looking for a way to make your brand unforgettable? 
-                        Let me transform your static logo into a vibrant, 
-                        eye-catching animation that leaves a lasting impression!
-                         Perfect for websites, social media, video intros, and presentations.</p>
-                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                        </div>
-            </div>
-           
-            <div class="card">
-                <img src="./assets/Graphics/PATHFINDER LABS page cover.png" alt="Project 3">
-                <div class="card-content">
-                    <h3>Brochures</h3>
-                    <h4>Transform Your Brand with a Professional Business Brochure!</h4>
-                    <p>Showcase your products, services, and story with a sleek, 
-                        custom-designed brochure. Whether for marketing, events, or presentations, 
-                        I'll create a visually stunning layout that captures attention and delivers 
-                        your message effectively.
-                         Stand out and make an impact—order your tailored brochure today!</p>
-                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                        </div>
-            </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto">
 
-            <div class="card">
-                <img src="./assets/Graphics/Stanley Gwe card.png" alt="Project 3">
-                <div class="card-content">
-                    <h3>Complimentary Cards </h3>
-                    <h4>Make a Lasting Impression with a Custom Business Card!</h4>
-                    <p>Elevate your brand with a professionally designed business card that’s sleek,
-                         modern, and memorable. 
-                         Perfectly tailored to reflect your style and business identity, 
-                         it’s the ultimate networking tool. 
-                        Let’s create a design that stands out and leaves a mark—order your 
-                        unique business card today!</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
+      <!-- CARD TEMPLATE (REPEATED WITH IMAGES + VIDEOS) -->
 
-            <div class="card">
-                <img src="./assets/Graphics/Wellnst logo.png" alt="Project 3">
-                <div class="card-content">
-                    <h3>PNG logo1</h3>
-                    <h4>Create a Stunning PNG Logo for Your Brand!</h4>
-                    <p>Looking for a clean, high-quality logo that speaks volumes about your business? 
-                        I’ll design a custom PNG logo with a transparent background, perfect for websites, 
-                        social media, and print. Stand out with a design tailored to your brand’s identity. 
-                        Let’s bring your vision to life—order now!</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <img src="./assets/Graphics/Tour237Logo.png" alt="Project 3">
-                <div class="card-content">
-                    <h3>PNG logo2</h3>
-                    <h4>Unique/custom Logo</h4>
-                    <p>Looking for a clean, high-quality logo that speaks volumes about your business? 
-                        I’ll design a custom PNG logo with a transparent background, perfect for websites, 
-                        social media, and print. Stand out with a design tailored to your brand’s identity.
-                         Let’s bring your vision to life—order now!</p>
-                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                        </div>
-            </div>
-
-            <div class="card">
-                <img src="./assets/Graphics/thumnail cyber A.png" alt="Project 3">
-                <div class="card-content">
-                    <h3>Thumnail</h3>
-                    <h4>Get Click-Worthy Thumbnails That Stand Out!</h4>
-                    <p>Boost your views and engagement with a custom thumbnail designed to grab attention 
-                        instantly. Perfect for YouTube, social media, and more, I’ll create an eye-catching, 
-                        high-quality design that represents your content perfectly. 
-                        Turn clicks into fans—order your custom thumbnail today! 🎯📸</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/Canva 50 Design Milestone Badge.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Canva Recognition</h3>
-                    <p>Certificated of completion of More than 50 projects in canva</p>
-                    <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/Gody video ad.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Business Ads</h3>
-                    <h4>Create Engaging Video Ads That Drive Results!</h4>
-                    <p>Capture attention and boost conversions with professionally crafted video ads tailored
-                         to your brand. Whether for social media, YouTube, or campaigns, 
-                         I’ll deliver high-quality, compelling visuals and messages that resonate with
-                          your audience.
-                         Let’s make your ads unforgettable—order your custom video ad today! 🎥🚀</p>
-                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                        </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/scannowPcTricks.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Online Tutoring</h3>
-                    <h4>Start Learning with Engaging Online Teaching Sessions!</h4>
-                    <p>Unlock your potential with interactive, personalized online teaching tailored to your 
-                        learning style. Whether for academics, skills development, or career growth, 
-                        I offer expert guidance in a fun and effective way. Flexible schedules,
-                        clear explanations, and guaranteed progress—let’s achieve your goals together! 🌟📚</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/wedding ad.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Event Coverage</h3>
-                    <h4>Bring Your Love Story to Life with Wedding & Romance Photo Animation!</h4>
-                    <p>Turn your cherished moments into magical, animated memories. 
-                        I’ll transform your wedding and romance photos with beautiful animations, effects, 
-                        and music that capture your love story perfectly. 
-                        Perfect for slideshows, social media, or keepsakes.
-                         Let’s create something unforgettable—order your animated love story today! 💕🎥✨</p>
-                         <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                        </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/Life billionYrsAgo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Documentary</h3>
-                    <h4>Craft a Compelling Documentary That Captivates Audiences!</h4>
-                    <p>Bring stories to life with a professionally produced documentary. 
-                        From powerful visuals to engaging storytelling, 
-                        I’ll create a masterpiece that informs, inspires, and connects with viewers.
-                         Whether for personal projects, brands, or causes,
-                          let’s turn your vision into a cinematic experience. 
-                        Order your custom documentary today! 🎥🌍✨</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/Browsing in Airplane Mode.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Tutoring</h3>
-                    <p>Unlock your potential with interactive, personalized online teaching 
-                        tailored to your learning style. Whether for academics, skills development, 
-                        or career growth, I offer expert guidance in a fun and effective way. 
-                        Flexible schedules, clear explanations, 
-                        and guaranteed progress—let’s achieve your goals together! 🌟📚</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/hotel.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Wed App Functionality</h3>
-                    <h4>Hotel site</h4>
-                    <p>Make onboarding effortless with a clear and engaging video user guide for your web app.
-                         I’ll create a professional tutorial that explains features, navigation, 
-                         and usage step-by-step. Perfect for new users and reducing support queries. 
-                        Let’s make your app user-friendly—order your custom video guide today! 🎥🖥️✨</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/Tour237 (1).mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Wed App Functionality</h3>
-                    <h4>One Stop Business app</h4>
-
-                    <p>Make onboarding effortless with a clear and engaging video user guide for your web app.
-                        I’ll create a professional tutorial that explains features, navigation, 
-                        and usage step-by-step. Perfect for new users and reducing support queries. 
-                       Let’s make your app user-friendly—order your custom video guide today! 🎥🖥️✨</p>
-                       <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/WellNest.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Wed App Functionality</h3>
-                    <h4>Medical Web App</h4>
-                    <p>Make onboarding effortless with a clear and engaging video user guide for your web app.
-                        I’ll create a professional tutorial that explains features, navigation, 
-                        and usage step-by-step. Perfect for new users and reducing support queries. 
-                       Let’s make your app user-friendly—order your custom video guide today! 🎥🖥️✨</p>
-                       <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-            <div class="card">
-                <video controls>
-                    <source src="./assets/Graphics/Light Blue Sci-Fi Futuristic Animated Logo.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <div class="card-content">
-                    <h3>Video Logo</h3>
-                    <p>Looking for a way to make your brand unforgettable? Let me transform your static logo
-                         into a vibrant, eye-catching animation that leaves a lasting impression! 
-                        Perfect for websites, social media, video intros, and presentations.</p>
-                        <a class="book" href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button>Book-now..</button></a> 
-                    </div>
-            </div>
-
-
-
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="./Graphics/pathfinder AnimatedLogo.gif" class="w-full h-52 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Animated Logos</h3>
+          <h4 class="text-pink-400 font-semibold">Bring Your Brand to Life</h4>
+          <p class="text-sm mt-2">Let me transform your static logo into a vibrant animated identity.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
         </div>
-    </section>
+      </div>
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <p>Hi! I'm a passionate graphic designer specializing in creating visual stories
-             that resonate. <br>
-              With a keen eye for details, 
-             I bring ideas to life through stunning designs. <br>
-             Most Designs here are for My Wed Development Applications. <br>
-             <a href="./wsite.html">Wed Dev Portfolio.</a> <br>
-             I Equally Have a YouTube Channel for General IT Awareness. <br>
-             <a href="https://www.youtube.com/@ITHacksAndTricks" target="_blank" rel="noopener noreferrer">My YouTube Channel</a>
+      <!-- MANY MORE CARDS ADDED BELOW -->
 
-            </p>
-    </section>
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="./Graphics/PATHFINDER LABS page cover.png" class="w-full h-52 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Brochures</h3>
+          <h4 class="text-pink-400 font-semibold">Professional Business Brochure</h4>
+          <p class="text-sm mt-2">Showcase your brand with a stunning custom brochure.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
 
-    <section id="contact" class="card">
-        <h2>Contact Me</h2>
-        <p>Cell: +237 652 484 583 / +237 683 762 319</p>
-        <p>Mail: <a href="mailto:pathfinderlabs1@gmail.com">Send mail</a></p>
-        <a href="https://wa.me/+237652484583?text=Hello!" target="_blank">WhatsApp1</a><br>
-        <a href="https://wa.me/+237683762319?text=Hello!" target="_blank">WhatsApp2</a>
-    
-    </section>
-    
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="./Graphics/Stanley Gwe card.png" class="w-full h-52 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Complimentary Cards</h3>
+          <h4 class="text-pink-400 font-semibold">Make a Lasting Impression</h4>
+          <p class="text-sm mt-2">Get a professional, modern business card design.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
 
-    <footer>
-        <p>© Gwe. All rights reserved.</p>
-    </footer>
+      <!-- PNG LOGO 1 -->
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="./Graphics/Wellnst logo.png" class="w-full h-52 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">PNG Logo 1</h3>
+          <h4 class="text-pink-400 font-semibold">High Quality Logo</h4>
+          <p class="text-sm mt-2">Clean transparent PNG logos for every brand identity.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
 
-    <script>
-        document.querySelector('#contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for reaching out! I will get back to you soon.');
-        });
-    </script>
+      <!-- PNG LOGO 2 -->
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="./Graphics/Tour237Logo.png" class="w-full h-52 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">PNG Logo 2</h3>
+          <h4 class="text-pink-400 font-semibold">Custom Logo</h4>
+          <p class="text-sm mt-2">A logo that speaks volumes—designed to perfection.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <!-- THUMBNAIL -->
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <img src="./Graphics/thumnail cyber A.png" class="w-full h-52 object-cover" />
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Thumbnail Design</h3>
+          <h4 class="text-pink-400 font-semibold">Click-Worthy Thumbnails</h4>
+          <p class="text-sm mt-2">Boost your engagement with custom-designed thumbnails.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <!-- VIDEOS (MULTIPLE) -->
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/Canva 50 Design Milestone Badge.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Canva Recognition</h3>
+          <p class="text-sm">Certificate for completing 50+ Canva projects.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/Gody video ad.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Business Ads</h3>
+          <h4 class="text-pink-400 font-semibold">Engaging Video Ads</h4>
+          <p class="text-sm mt-2">High-quality ads that connect with your audience.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/scannowPcTricks.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Online Tutoring</h3>
+          <h4 class="text-pink-400 font-semibold">Learn Interactively</h4>
+          <p class="text-sm mt-2">Engaging online teaching for all levels.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/wedding ad.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Event Coverage</h3>
+          <h4 class="text-pink-400 font-semibold">Wedding & Romance Animation</h4>
+          <p class="text-sm mt-2">Turn precious photos into magical love stories.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/Life billionYrsAgo.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Documentary</h3>
+          <h4 class="text-pink-400 font-semibold">Cinematic Storytelling</h4>
+          <p class="text-sm mt-2">Create documentaries that educate and inspire.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/Browsing in Airplane Mode.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Tutoring</h3>
+          <p class="text-sm mt-2">Personalized online lessons to help you grow.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/hotel.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Web App Functionality</h3>
+          <h4 class="text-pink-400 font-semibold">Hotel Web App</h4>
+          <p class="text-sm mt-2">Professional onboarding tutorials for web apps.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/Tour237 (1).mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Web App Functionality</h3>
+          <h4 class="text-pink-400 font-semibold">One Stop Business App</h4>
+          <p class="text-sm mt-2">Clear tutorials for multi-service business apps.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/WellNest.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Web App Functionality</h3>
+          <h4 class="text-pink-400 font-semibold">Medical Web App</h4>
+          <p class="text-sm mt-2">User-friendly design walkthroughs for health apps.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+      <!-- VIDEO LOGO -->
+      <div class="bg-white text-gray-900 rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+        <video controls class="w-full h-52 object-cover"><source src="./Graphics/Light Blue Sci-Fi Futuristic Animated Logo.mp4"></video>
+        <div class="p-4">
+          <h3 class="text-xl font-bold text-red-600 underline">Video Logo</h3>
+          <p class="text-sm mt-2">Animated logo intros perfect for branding.</p>
+          <a href="https://wa.me/+237652484583?text=Hello!" target="_blank"><button class="mt-4 px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Book Now</button></a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-16 px-4 text-center max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+    <p class="text-gray-700 leading-loose">
+      I am a passionate graphic designer creating visual stories that resonate.
+      Most designs here accompany my web development applications.
+      <br><br>
+      <a href="./wsite.html" class="text-blue-600 underline">Web Development Portfolio</a><br>
+      <a href="https://www.youtube.com/@ITHacksAndTricks" target="_blank" class="text-blue-600 underline">My YouTube Channel</a>
+    </p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-white shadow max-w-xl mx-auto p-10 rounded-lg text-center">
+    <h2 class="text-3xl font-bold mb-4">Contact Me</h2>
+    <p>Cell: +237 652 484 583 / +237 683 762 319</p>
+    <p>Email: <a href="mailto:pathfinderlabs1@gmail.com" class="text-blue-600 underline">Send Mail</a></p>
+    <br>
+    <a href="https://wa.me/+237652484583?text=Hello!" target="_blank" class="text-green-600 underline">WhatsApp 1</a><br>
+    <a href="https://wa.me/+237683762319?text=Hello!" target="_blank" class="text-green-600 underline">WhatsApp 2</a>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="mt-16 p-4 bg-purple-900 text-white text-center">
+    © Gwe. All rights reserved.
+  </footer>
+
 </body>
 </html>
