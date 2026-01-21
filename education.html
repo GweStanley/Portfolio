@@ -1,96 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Gwe S. Education</title>
-    <style>
-        table, th, td {
-          border: 0.1px solid black;
-        }
-         body{
-          line-height: 2;
-          padding: auto;
-          background-color: lightcyan;
-         }
-         table{
-          line-height: 1;
-         }
-         h3{
-          background-color: beige;
-          border-radius: 3%;
-          text-align: center;
-         }
-        </style>
-          <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gwe S. — Education & Training</title>
+
+  <style>
+    :root{
+      --bg:#f7fbfb;
+      --card:#ffffff;
+      --primary:#0f766e;
+      --secondary:#334155;
+      --muted:#64748b;
+      --border:#e2e8f0;
+      --accent:#14b8a6;
+    }
+
+    *{ box-sizing:border-box; }
+
+    body{
+      margin:0;
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:var(--secondary);
+      line-height:1.7;
+    }
+
+    .wrapper{
+      max-width:1100px;
+      margin:auto;
+      padding:3rem 1.25rem;
+    }
+
+    h1{
+      text-align:center;
+      font-size:2.2rem;
+      margin-bottom:2.5rem;
+      color:#0f172a;
+    }
+
+    h2{
+      font-size:1.5rem;
+      margin:3rem 0 1.5rem;
+      color:var(--primary);
+      text-align:center;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px, 1fr));
+      gap:1.5rem;
+    }
+
+    .card{
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:14px;
+      padding:1.5rem;
+      box-shadow:0 8px 20px rgba(15, 23, 42, 0.05);
+    }
+
+    .card h3{
+      margin:0 0 .4rem;
+      font-size:1.05rem;
+      color:#0f172a;
+    }
+
+    .card span{
+      font-size:.9rem;
+      color:var(--muted);
+      display:block;
+    }
+
+    .tag{
+      display:inline-block;
+      margin-top:.6rem;
+      padding:.3rem .7rem;
+      font-size:.75rem;
+      border-radius:999px;
+      background:rgba(20,184,166,.12);
+      color:var(--primary);
+      font-weight:600;
+    }
+
+    ul{
+      margin:0;
+      padding-left:1.1rem;
+    }
+
+    li{
+      margin:.5rem 0;
+    }
+
+    footer{
+      text-align:center;
+      margin-top:4rem;
+      padding-top:1.5rem;
+      border-top:1px solid var(--border);
+      color:var(--muted);
+      font-size:.9rem;
+    }
+
+    @media (max-width:640px){
+      h1{ font-size:1.8rem; }
+      h2{ font-size:1.35rem; }
+    }
+  </style>
 </head>
 
-
 <body>
-   <h3>My Formal Educational Background</h3>
-   <div class="container">
-    <table style="width:100%">
-        <tr>
-          <th>Period</th>
-          <th>Institution</th>
-          <th>Certificate Acquired</th>
-          <th>Specialty</th>
-        </tr>
-        <tr>
-          <td>2000-2007</td>
-          <td>CS NJINIKOM</td>
-          <td>FSLC</td>
-          <td>General</td>
-        </tr>
-        <tr>
-          <td>2007-2014</td>
-          <td>GTHS FUNDONG</td>
-          <td>Bacalaureat G</td>
-          <td>Gestion des Administration</td>
-        </tr>
-        <tr>
-            <td>2014-2016</td>
-            <td>FONAB Polytechnic  University Institute</td>
-            <td>Higher National Diploma (HND)</td>
-            <td>Accounting and Finance</td>
+  <main class="wrapper">
 
+    <h1>Education & Professional Development</h1>
 
-        </tr>
-        <tr>
-            <td>2023-2024</td>
-            <td>FONAB Polytechnic University Institute</td>
-            <td>Bachelor of Technology (Btech)</td>
-            <td>Accounting and Finance</td>
-        </tr>
-      </table>
-    </div>
+    <!-- FORMAL EDUCATION -->
+    <h2>Formal Education</h2>
+    <section class="grid">
 
-      <h3>Other Education/ Vocational Training</h3>
-      <div class="container">
-      <ul>
-        <li>Web Development: Udemy</li>
-        <li>Graphics Designing: Udemy / Bk Studios</li>
-        <li>UN BSAFE: Online course</li>
-      </ul>
-    </div>
+      <article class="card">
+        <h3>CS Njinikom</h3>
+        <span>2000 – 2007</span>
+        <p>First School Leaving Certificate (FSLC)</p>
+        <span class="tag">General Education</span>
+      </article>
 
-      <h3>Seminars and capacity Building Workshops</h3>
-      <div class="container">
+      <article class="card">
+        <h3>GTHS Fundong</h3>
+        <span>2007 – 2014</span>
+        <p>Baccalauréat G</p>
+        <span class="tag">Business Administration</span>
+      </article>
 
-      <ul>
-        <li>Tax optimization by MINFI Cameroon 2023</li>
-        <li>Anti Money Laundry and Terrorism Financing by MINFI Cameroon 2024  </li>
-        <li>Credit Risk Management by MUFID Union</li>
-        <li>Survival in Hot Zones by UN</li>
-      </ul>
-    </div>
+      <article class="card">
+        <h3>FONAB Polytechnic University Institute</h3>
+        <span>2014 – 2016</span>
+        <p>Higher National Diploma (HND)</p>
+        <span class="tag">Accounting & Finance</span>
+      </article>
 
-      <hr>
+      <article class="card">
+        <h3>FONAB Polytechnic University Institute</h3>
+        <span>2023 – 2024</span>
+        <p>Bachelor of Technology (BTech)</p>
+        <span class="tag">Accounting & Finance</span>
+      </article>
 
-       
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <h2>Professional & Technical Training</h2>
+    <section class="grid">
+
+      <article class="card">
+        <h3> Full Stack Web Development</h3>
+        <span>Udemy <em>(Dr. Angela Yu)</em></span>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Next.js <em>(Code Bless You)</em></li>
+          <li>Responsive & mobile-first design</li>
+          <li>Modern frontend workflows</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>Graphic Design</h3>
+        <span>Udemy / BK Studios</span>
+        <ul>
+          <li>Branding & visual communication</li>
+          <li>Digital design for web & social media</li>
+        </ul>
+      </article>
+
+      <article class="card">
+        <h3>UN BSAFE</h3>
+        <span>United Nations (Online)</span>
+        <ul>
+          <li>Security awareness & risk mitigation</li>
+          <li>Operational safety in volatile environments</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <!-- WORKSHOPS -->
+    <h2>Seminars & Capacity-Building Workshops</h2>
+    <section class="grid">
+
+      <article class="card">
+        <ul>
+          <li>Tax Optimization — MINFI Cameroon (2023)</li>
+          <li>Anti-Money Laundering & Counter-Terrorism Financing — MINFI Cameroon (2024)</li>
+          <li>Credit Risk Management — MUFID Union</li>
+          <li>Survival in High-Risk & Humanitarian Zones — United Nations</li>
+        </ul>
+      </article>
+
+    </section>
+
+    <footer>
+      © Gwe S. All rights reserved.
+    </footer>
+
+  </main>
 </body>
-<footer>
-  <p>&copy; Gwe. All rights reserved.</p>
-</footer>
-
 </html>
