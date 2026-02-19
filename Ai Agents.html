@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="AI-powered conversational agents for service businesses. Booking automation, FAQ intelligence, and lead capture systems built with scalable architecture." />
+<title>AI Agents Portfolio | Gwe Stanley</title>
+
+<style>
+:root {
+  --primary: #111827;
+  --accent: #2563eb;
+  --light: #f9fafb;
+  --text: #374151;
+  --max-width: 1100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  background: var(--light);
+  color: var(--text);
+}
+
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 4rem 1.5rem;
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-primary {
+  background: var(--accent);
+  color: white;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+.btn-outline {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+}
+
+.btn-outline:hover {
+  background: var(--accent);
+  color: white;
+}
+
+.hero {
+  background: white;
+  text-align: center;
+  padding: 6rem 1.5rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 1rem auto 2rem;
+  font-size: 1.1rem;
+}
+
+.section {
+  background: white;
+  margin-bottom: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.04);
+}
+
+.grid {
+  display: grid;
+  gap: 2rem;
+}
+
+.grid-3 {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.card {
+  padding: 2rem;
+  border-radius: 12px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+}
+
+.card h3 {
+  margin-bottom: 0.5rem;
+}
+
+.cta {
+  text-align: center;
+  padding: 4rem 1.5rem;
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #6b7280;
+}
+
+/* Hidden Section Animation */
+#customAgentsSection {
+  display: none;
+  animation: fadeIn 0.4s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+  <h1>AI Agents That Turn Conversations Into Conversions</h1>
+  <p>
+    I design and deploy intelligent conversational systems for service businesses —
+    automated FAQs, smart intent detection, booking workflows, and lead capture —
+    built for scalability and performance.
+  </p>
+  <a href="#projects" class="btn btn-primary">View Projects</a>
+</section>
+
+<!-- WHAT I BUILD -->
+<section class="container section">
+  <h2>What I Build</h2>
+  <div class="grid grid-3">
+    <div class="card">
+      <h3>Smart FAQ Systems</h3>
+      <p>Keyword-driven conversational engines with structured knowledge architecture to handle real business questions.</p>
+    </div>
+    <div class="card">
+      <h3>Booking Automation</h3>
+      <p>Integrated chat-to-book workflows that trigger forms, capture leads, and route inquiries instantly.</p>
+    </div>
+    <div class="card">
+      <h3>Multi-Business Architecture</h3>
+      <p>Configurable AI agent systems supporting multiple industries with scalable design.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="container section">
+  <h2>Featured AI Agent System</h2>
+  <div class="card">
+    <h3>Service Business Conversational Platform</h3>
+    <p>
+      Built a scalable AI chat agent framework using React, Node.js, and MongoDB.
+      Designed keyword-based intent logic, structured FAQ intelligence,
+      booking modal triggers, and persistent session handling.
+    </p>
+
+    <ul>
+      <li>Intent detection with keyword matching</li>
+      <li>Dynamic FAQ rendering</li>
+      <li>Lead capture automation</li>
+      <li>Booking funnel integration</li>
+      <li>Reusable business schema architecture</li>
+    </ul>
+
+    <button id="toggleAgentsBtn" class="btn btn-outline" style="margin-top:1.5rem;">
+      See Custom Agents
+    </button>
+  </div>
+</section>
+
+<!-- CUSTOM AGENTS (Hidden Initially) -->
+<section id="customAgentsSection" class="container section">
+  <h2>Custom AI Agents</h2>
+  <p style="margin-bottom:2rem;">
+    Industry-specific conversational systems built for automation, booking,
+    and customer engagement.
+  </p>
+
+  <div class="grid grid-3">
+
+    <div class="card"><h3>Real Estate Agent</h3><p>Property inquiries, scheduling viewings, mortgage FAQs.</p>
+         <a href="https://gwe1virtually247.com/agent?site=lone-star-realty" class="btn btn-primary">See Demo</a>
+ 
+    </div>
+    <div class="card"><h3>Restaurant Agent</h3><p>Reservations, menu details, delivery questions.</p>
+    <a href="https://gwe1virtually247.com/agent?site=texas-grill-house" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Cleaning Service Agent</h3><p>Service pricing, availability, booking.</p>         <a href="" class="btn btn-primary">See Demo</a>
+         <a href="https://gwe1virtually247.com/agent?site=sparkle-clean-texas" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Dental Clinic Agent</h3><p>Appointments, insurance, treatments.</p>
+             <a href="https://gwe1virtually247.com/agent?site=texas-smile-clinic" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Web Developer Agent</h3><p>Procedure details, consultations, pricing.</p>
+             <a href="https://gwe1virtually247.com/agent?site=gs-pathfinder-labs" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Gym Agent</h3><p>Estimates, seasonal services.</p>
+             <a href="https://gwe1virtually247.com/agent?site=elite-fitness-houston" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Plumbing Agent</h3><p>Inspections, repairs, damage assessment.</p>
+             <a href="https://gwe1virtually247.com/agent?site=acme-plumbing" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Legal Firm Agent</h3><p>Consultations, case intake, documentation.</p> 
+             <a href="https://gwe1virtually247.com/agent?site=texas-immigration-law" class="btn btn-primary">See Demo</a>
+    </div>
+    <div class="card"><h3>Travel Agent</h3><p>Flights, Hotels, Booking.</p>
+             <a href="https://gwe1virtually247.com/agent?site=global-travel-texas" class="btn btn-primary">See Demo</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+  <h2>Ready to Automate Your Business Conversations?</h2>
+  <p>Let’s build an AI agent tailored to your industry.</p>
+  <a href="mailto:gwestanley1@gmail.com" class="btn btn-primary">Contact Me</a>
+</section>
+
+<footer>
+  © 2026 Gwe Stanley Ayungha • AI Automation Developer
+</footer>
+
+<script>
+const toggleBtn = document.getElementById("toggleAgentsBtn");
+const agentsSection = document.getElementById("customAgentsSection");
+
+toggleBtn.addEventListener("click", () => {
+  if (agentsSection.style.display === "block") {
+    agentsSection.style.display = "none";
+    toggleBtn.textContent = "See Custom Agents";
+  } else {
+    agentsSection.style.display = "block";
+    toggleBtn.textContent = "Hide Custom Agents";
+    agentsSection.scrollIntoView({ behavior: "smooth" });
+  }
+});
+</script>
+
+</body>
+</html>
